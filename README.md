@@ -1,46 +1,77 @@
-# hospital-queue-manager
-Simple hospital queue management system for patient check-in, prioritization, and checkout tracking.
-
-markdown
-Copy code
-# 🏥 Hospital Queue Management System
+# Hospital Queue Manager
 
 A simple hospital queue management web application to register patients, prioritize them based on emergency level, and manage check-ins and check-outs.
 
-## 📋 Features
-- Patient check-in with name, emergency level, and symptoms.
-- Displays current patient queue in a table.
-- Priority levels: Critical, Moderate, Normal.
-- Allows checkout/removal of patients after treatment.
+---
 
-## 🌐 Tech Stack
-- **Frontend:** HTML, CSS, JavaScript (Vanilla)
-- **Backend:** Assumes API at `http://localhost:3000`
-- **Modules:** Modular JS (`counter.js` is a reusable counter module)
+## Problem Statement
 
-## 📂 File Structure
-├── index.html # Main HTML page
-├── style.css # Styling for the app
-├── main.js # Core logic for form and queue handling
-├── counter.js # Reusable counter module
-├── javascript.svg # (Optional) JS logo asset
+Hospitals need a lightweight system to manage patient queues with priority-based ordering and checkout tracking.
 
-markdown
-Copy code
+## Objectives
 
-## 🚀 Getting Started
+- Register patients with name, emergency level, and symptoms
+- Display current patient queue in a table
+- Support priority levels: Critical, Moderate, Normal
+- Allow checkout/removal of patients after treatment
 
-### 1. Prerequisites
-- Browser (Chrome/Firefox recommended)
-- Optionally: Node.js (for running backend API)
+## Key Features
 
-### 2. Run the App (Frontend Only)
-1. Clone or download the repository.
-2. Open `index.html` in a browser.
-3. Make sure the backend is running at `http://localhost:3000`.
+- **Patient Check-In** — name, emergency level, and symptoms
+- **Queue Display** — table view of current patients
+- **Priority Levels** — Critical, Moderate, Normal
+- **Checkout Management** — remove patients after treatment
+- **Modular JavaScript** — reusable counter module
 
-### 3. Backend Setup (Optional JSON Server)
-If you need a quick backend, use JSON Server:
+## Technologies Used
+
+| Component | Technology |
+|-----------|-----------|
+| Frontend | HTML, CSS, JavaScript (Vanilla) |
+| Backend | Assumes API at `http://localhost:3000` |
+| Modules | Modular JS (counter.js) |
+
+## Project Structure
+
+```
+hospital-queue-manager/
+├── index.html       # Main HTML page
+├── style.css        # Styling
+├── main.js          # Core logic for form and queue handling
+├── counter.js       # Reusable counter module
+├── server.js        # Backend server
+├── package.json     # Node.js dependencies
+└── README.md
+```
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js 14+
+- npm
+
+### Setup
 ```bash
-npm install -g json-server
-json-server --watch db.json --port 3000
+npm install
+node server.js
+```
+
+Application expects backend API at `http://localhost:3000`.
+
+## Limitations
+
+- Assumes external backend API
+- No persistent database (in-memory or API-dependent)
+- No user authentication
+
+## Author and Contact Information
+
+**SAMALA RAKSHITH BABU**
+
+- Email: samalarakshithbabu7@gmail.com
+- LinkedIn: https://www.linkedin.com/in/samala-rakshith-babu-9374ab281/
+- GitHub: https://github.com/samalarakshithbabu
+
+## License
+
+MIT License (badge-confirmed; file path not verified).
